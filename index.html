@@ -424,83 +424,133 @@
 
     </section><!-- /Services Section -->
 
-    <!-- Contact Section -->
-    <section id="contact" class="contact section">
+<!-- Contact Section -->
+<section id="contact" class="contact section">
 
-      <!-- Section Title -->
-      <div class="container section-title" data-aos="fade-up">
-        <h2>Contact</h2>
-        <p>If you're interested in working together or have a project in mind, feel free to get in touch!</p>
-      </div><!-- End Section Title -->
+  <!-- Section Title -->
+  <div class="container section-title" data-aos="fade-up">
+    <h2>Contact</h2>
+    <p>If you're interested in working together or have a project in mind, feel free to get in touch!</p>
+  </div><!-- End Section Title -->
 
-      <div class="container" data-aos="fade" data-aos-delay="100">
+  <div class="container" data-aos="fade" data-aos-delay="100">
+    <div class="row gy-4 align-items-start"> <!-- Align items at top -->
 
-        <div class="row gy-4">
-
-          <div class="col-lg-4">
-            <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="200">
-              <i class="bi bi-geo-alt flex-shrink-0"></i>
-              <div>
-                <h3>Address</h3>
-                <p>Beijing, China</p>
-              </div>
-            </div><!-- End Info Item -->
-
-            <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="300">
-              <i class="bi bi-telephone flex-shrink-0"></i>
-              <div>
-                <h3>WeChat or Call</h3>
-                <p>+86 18513704003</p>
-              </div>
-            </div><!-- End Info Item -->
-
-            <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="400">
-              <i class="bi bi-envelope flex-shrink-0"></i>
-              <div>
-                <h3>Email</h3>
-                <p>shuang.li.analytics@gmail.com</p>
-              </div>
-            </div><!-- End Info Item -->
-
+      <!-- Left: Contact Info -->
+      <div class="col-lg-4">
+        <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="200">
+          <i class="bi bi-geo-alt flex-shrink-0"></i>
+          <div>
+            <h3>Address</h3>
+            <p>Chaoyang District, Beijing, China</p>
           </div>
-
-          <div class="col-lg-8">
-            <form action="forms/contact.php" method="post" class="php-email-form" data-aos="fade-up" data-aos-delay="200">
-              <div class="row gy-4">
-
-                <div class="col-md-6">
-                  <input type="text" name="name" class="form-control" placeholder="Your Name" required="">
-                </div>
-
-                <div class="col-md-6 ">
-                  <input type="email" class="form-control" name="email" placeholder="Your Email" required="">
-                </div>
-
-                <div class="col-md-12">
-                  <input type="text" class="form-control" name="subject" placeholder="Subject" required="">
-                </div>
-
-                <div class="col-md-12">
-                  <textarea class="form-control" name="message" rows="6" placeholder="Message" required=""></textarea>
-                </div>
-
-                <div class="col-md-12 text-center">
-                  <div class="loading">Loading</div>
-                  <div class="error-message"></div>
-                  <div class="sent-message">Your message has been sent. Thank you!</div>
-
-                  <button type="submit">Send Message</button>
-                </div>
-
-              </div>
-            </form>
-          </div><!-- End Contact Form -->
-
         </div>
-
+        <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="300">
+          <i class="bi bi-telephone flex-shrink-0"></i>
+          <div>
+            <h3>WeChat or Call</h3>
+            <p>+86 18513704003</p>
+          </div>
+        </div>
+        <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="400">
+          <i class="bi bi-envelope flex-shrink-0"></i>
+          <div>
+            <h3>Email</h3>
+            <p>shuang.li.analytics@gmail.com</p>
+          </div>
+        </div>
       </div>
 
-    </section><!-- /Contact Section -->
+      <!-- Right: Contact Form -->
+      <div class="col-lg-8">
+        <form action="https://formsubmit.co/ajax/shuang.li.analytics@gmail.com" method="POST" class="php-email-form" data-aos="fade-up" data-aos-delay="200">
+          <div class="row gy-4">
+      
+            <div class="col-md-6">
+              <input type="text" name="name" class="form-control" placeholder="Your Name" required>
+            </div>
+      
+            <div class="col-md-6">
+              <input type="email" name="email" class="form-control" placeholder="Your Email" required>
+            </div>
+      
+            <div class="col-md-12">
+              <input type="text" name="subject" class="form-control" placeholder="Subject" required>
+            </div>
+      
+            <div class="col-md-12">
+              <textarea name="message" class="form-control" rows="6" placeholder="Message" required></textarea>
+            </div>
+      
+            <!-- Hidden Formsubmit options -->
+            <input type="hidden" name="_captcha" value="false">
+            <input type="hidden" name="_template" value="table">
+      
+            <div class="col-md-12 text-center">
+              <div class="loading" style="display: none;">Loading</div>
+              <div class="error-message" style="display: none;">Something went wrong. Please try again.</div>
+              <div class="sent-message" style="display: none;">Your message has been sent. Thank you!</div>
+      
+              <button type="submit">Send Message</button>
+            </div>
+      
+          </div>
+        </form>
+        <script>
+          const form = document.querySelector('.php-email-form');
+        
+          form.addEventListener('submit', function (e) {
+            e.preventDefault();
+        
+            const loading = form.querySelector('.loading');
+            const errorMsg = form.querySelector('.error-message');
+            const successMsg = form.querySelector('.sent-message');
+        
+            loading.style.display = 'block';
+            errorMsg.style.display = 'none';
+            errorMsg.textContent = '';
+            successMsg.style.display = 'none';
+        
+            const formData = new FormData(form);
+        
+            fetch("https://formsubmit.co/ajax/shuang.li.analytics@gmail.com", {
+              method: "POST",
+              headers: { 'Accept': 'application/json' },
+              body: formData
+            })
+              .then(response => response.text()) // always treat as text
+              .then(text => {
+                loading.style.display = 'none';
+        
+                let data;
+                try {
+                  data = JSON.parse(text);
+                } catch (err) {
+                  throw new Error("Unexpected response format: " + text);
+                }
+        
+                if (data.success === "true" || data.success === true) {
+                  successMsg.style.display = 'block';
+                  errorMsg.style.display = 'none';
+                  form.reset();
+                  setTimeout(() => {
+                    successMsg.style.display = 'none';
+                  }, 5000);
+                } else {
+                  errorMsg.textContent = data.message || "Something went wrong. Please try again.";
+                  errorMsg.style.display = 'block';
+                }
+              })
+              .catch(error => {
+                loading.style.display = 'none';
+                errorMsg.textContent = "Error: " + error.message;
+                errorMsg.style.display = 'block';
+              });
+          });
+        </script>
+
+      </div><!-- End Contact Form -->
+<!-- /Contact Section -->
 
   </main>
 
@@ -533,7 +583,6 @@
 
   <!-- Vendor JS Files -->
   <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-  <script src="assets/vendor/php-email-form/validate.js"></script>
   <script src="assets/vendor/aos/aos.js"></script>
   <script src="assets/vendor/typed.js/typed.umd.js"></script>
   <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
