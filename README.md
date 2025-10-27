@@ -12,7 +12,7 @@ This website showcases my journey and work in **Data Analytics**, **Business Int
 
 This portfolio features:
 - 📈 Case studies for data analytics and business intelligence projects
-- 🛠 Technical skills: SQL, R, Tableau, Spreadsheets
+- 🛠 Technical skills: SQL, R, Python, Tableau, Spreadsheets
 - 📚 Educational background and certifications
 - 🌐 Fully working contact form powered by FormSubmit (no backend)
 - ✨ Responsive, mobile-friendly design
