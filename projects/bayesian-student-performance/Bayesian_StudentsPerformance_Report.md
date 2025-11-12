@@ -146,7 +146,7 @@ python bayesian_students_performance.py
 ```
 
 ### Online Access
-- Report: [GitHub Pages](https://shuang-li-501.github.io/projects/bayesian-student-performance/Bayesian_StudentsPerformance_Report_Medium.md)
+- Report: [GitHub Pages](https://shuang-li-501.github.io/projects/bayesian-student-performance/Bayesian_StudentsPerformance_Report.md)
 - Notebook: [NBViewer](https://nbviewer.org/github/shuang-li-501/shuang-li-501.github.io/blob/main/projects/bayesian-student-performance/Bayesian_StudentsPerformance.ipynb
 )
 
