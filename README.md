@@ -43,29 +43,6 @@ This website is a **heavily customized version** of the free [MyResume Bootstrap
 
 ---
 
-## 🚀 How to Run Locally
-
-1. Clone the repository:
-   ```bash
-   git clone https://github.com/Shuang-Li-501/your-repo-name.git
-   ```
-
-2. Navigate to the project folder:
-   ```bash
-   cd your-repo-name
-   ```
-
-3. Open `index.html` directly in your browser, or open the project in Visual Studio Code for editing.
-
-4. If you make changes, you can push updates to GitHub by:
-   ```bash
-   git add .
-   git commit -m "Update portfolio"
-   git push
-   ```
-
----
-
 ## 📬 Contact Me
 
 Feel free to connect if you're interested in working together or have any questions:
