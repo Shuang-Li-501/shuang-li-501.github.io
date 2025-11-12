@@ -1,0 +1,13 @@
+Factor,Subject,A,B,nA,nB,Mean_Diff,CrI_2.5%,CrI_97.5%,P(diff>0)
+test_prep,math,completed,none,358,642,5.618,5.618,5.618,1.0
+test_prep,reading,completed,none,358,642,7.36,7.36,7.36,1.0
+test_prep,writing,completed,none,358,642,9.914,9.914,9.914,1.0
+gender,math,female,male,518,482,-5.095,-5.095,-5.095,0.0
+gender,reading,female,male,518,482,7.135,7.135,7.135,1.0
+gender,writing,female,male,518,482,9.156,9.156,9.156,1.0
+lunch,math,standard,free/reduced,645,355,11.113,11.113,11.113,1.0
+lunch,reading,standard,free/reduced,645,355,7.001,7.001,7.001,1.0
+lunch,writing,standard,free/reduced,645,355,7.801,7.801,7.801,1.0
+parent_ed,math,bachelor's degree,some high school,118,179,5.893,5.892,5.893,1.0
+parent_ed,reading,bachelor's degree,some high school,118,179,6.061,6.061,6.062,1.0
+parent_ed,writing,bachelor's degree,some high school,118,179,8.493,8.493,8.493,1.0
